@@ -21,7 +21,7 @@ const Homepage = () => {
       {/* Top Selling */}
       <TopSelling />
       {/* Browse by Dress Style */}
-      {/* <Browse /> */}
+      <Browse />
       {/* Testimonials */}
       <Testimonials />
       {/* Footer */}

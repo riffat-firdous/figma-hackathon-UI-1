@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Integral CF", ...fontFamily.sans], // Set as default sans font
+        integral: ["Integral CF", "sans-serif"], // Add custom family
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

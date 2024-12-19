@@ -13,9 +13,102 @@
     --foreground: #171717;
   }
 }
+@font-face {
+  font-family: "Integral CF";
+  src: url("/assets/fonts/IntegralCF-Regular.eot");
+  src: local("Integral CF Regular"), local("IntegralCF-Regular"),
+    url("/assets/fonts/IntegralCF-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/IntegralCF-Regular.woff2") format("woff2"),
+    url("/assets/fonts/IntegralCF-Regular.woff") format("woff"),
+    url("/assets/fonts/IntegralCF-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("/assets/fonts/IntegralCF-Medium.eot");
+  src: local("Integral CF Medium"), local("IntegralCF-Medium"),
+    url("/assets/fonts/IntegralCF-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/IntegralCF-Medium.woff2") format("woff2"),
+    url("/assets/fonts/IntegralCF-Medium.woff") format("woff"),
+    url("/assets/fonts/IntegralCF-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("/assets/fonts/IntegralCF-Bold.eot");
+  src: local("Integral CF Bold"), local("IntegralCF-Bold"),
+    url("/assets/fonts/IntegralCF-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/IntegralCF-Bold.woff2") format("woff2"),
+    url("/assets/fonts/IntegralCF-Bold.woff") format("woff"),
+    url("/assets/fonts/IntegralCF-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("/assets/fonts/IntegralCF-Heavy.eot");
+  src: local("Integral CF Heavy"), local("IntegralCF-Heavy"),
+    url("/assets/fonts/IntegralCF-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/IntegralCF-Heavy.woff2") format("woff2"),
+    url("/assets/fonts/IntegralCF-Heavy.woff") format("woff"),
+    url("/assets/fonts/IntegralCF-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("/assets/fonts/IntegralCF-Oblique.eot");
+  src: local("Integral CF Oblique"), local("IntegralCF-Oblique"),
+    url("/assets/fonts/IntegralCF-Oblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/IntegralCF-Oblique.woff2") format("woff2"),
+    url("/assets/fonts/IntegralCF-Oblique.woff") format("woff"),
+    url("/assets/fonts/IntegralCF-Oblique.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("/assets/fonts/IntegralCF-BoldOblique.eot");
+  src: local("Integral CF Bold Oblique"), local("IntegralCF-BoldOblique"),
+    url("/assets/fonts/IntegralCF-BoldOblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/IntegralCF-BoldOblique.woff2") format("woff2"),
+    url("/assets/fonts/IntegralCF-BoldOblique.woff") format("woff"),
+    url("/assets/fonts/IntegralCF-BoldOblique.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("/assets/fonts/IntegralCF-HeavyOblique.eot");
+  src: local("Integral CF Heavy Oblique"), local("IntegralCF-HeavyOblique"),
+    url("/assets/fonts/IntegralCF-HeavyOblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/IntegralCF-HeavyOblique.woff2") format("woff2"),
+    url("/assets/fonts/IntegralCF-HeavyOblique.woff") format("woff"),
+    url("/assets/fonts/IntegralCF-HeavyOblique.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
 
 body {
+  @apply font-sans; /* This applies the 'Integral CF' as the default sans-serif font */
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Integral CF", sans-serif;
+  font-weight: 800;
 }

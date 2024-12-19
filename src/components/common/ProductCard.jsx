@@ -33,6 +33,7 @@ const ProductCard = ({
         <p className="ml-2 flex flex-col items-center justify-center text-sm font-normal text-gray-600">
           {rating}/5
         </p>
+        t5rfV
       </div>
 
       {/* Pricing */}
