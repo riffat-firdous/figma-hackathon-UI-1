@@ -26,8 +26,8 @@ const ProductCard = ({
       {/* Rating */}
       <div className="flex items-center  mt-2 mb-4">
         <div className="flex items-center text-yellow-500">
-          {[1, 2, 3, 4, 5].map(() => (
-            <img src="/assets/icons/star.svg" alt="rating" />
+          {[1, 2, 3, 4, 5].map((star) => (
+            <img key={star} src="/assets/icons/star.svg" alt="rating" />
           ))}
         </div>
         <p className="ml-2 flex flex-col items-center justify-center text-sm font-normal text-gray-600">
