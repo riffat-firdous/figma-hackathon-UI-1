@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="text-black h-full mx-32">
         <div className="mx-auto flex flex-col md:flex-row items-center px-6 justify-between h-full">
           <div className="md:w-[596px] text-center md:text-left ">
-            <h1 className=" mb-4">
+            <h1 className="font-extrabold text-5xl mb-4">
               FIND CLOTHES THAT MATCHES YOUR STYLE
             </h1>
             <p className="mb-6 ">
